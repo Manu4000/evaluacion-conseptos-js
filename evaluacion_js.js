@@ -14,3 +14,17 @@ alert("La suma de " + num1 + " y " + num2 + " es igual a " + suma + ".");*/
 var num2 = parseInt(prompt("Por favor ingrese el segundo número"));
 var mayor = (num1 > num2) ? num1 : num2;
 alert("El número mayor entre " + num1 + " y " + num2 + " es " + mayor + "."); */
+
+//ejercicio 3 d)
+/* var num1 = parseInt(prompt("Por favor ingrese el primer número"));
+var num2 = parseInt(prompt("Por favor ingrese el segundo número"));
+var num3 = parseInt(prompt("Por favor ingrese el tercer número"));
+var mensaje;
+
+if (num1 == num2 && num2 == num3) {
+    mensaje = "Los tres números son iguales.";
+} else {
+    mensaje = "Los tres números no son iguales.";
+}
+
+alert(mensaje);*/
