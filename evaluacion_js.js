@@ -28,3 +28,13 @@ if (num1 == num2 && num2 == num3) {
 }
 
 alert(mensaje);*/
+
+//ejercicio 3 e)
+/*var num1 = parseInt(prompt("Ingrese el primer número:"));
+var num2 = parseInt(prompt("Ingrese el segundo número:"));
+var num3 = parseInt(prompt("Ingrese el tercer número:"));
+
+var numeros = [num1, num2, num3];
+numeros.sort(function(a, b){return b-a});
+
+alert("Los números ordenados de mayor a menor son: " + numeros);*/
