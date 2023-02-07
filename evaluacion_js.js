@@ -38,3 +38,11 @@ var numeros = [num1, num2, num3];
 numeros.sort(function(a, b){return b-a});
 
 alert("Los números ordenados de mayor a menor son: " + numeros);*/
+
+//ejercicio 3 f)
+/*var peso = parseInt(prompt("Ingrese su peso en kg:"));
+var altura = parseInt(prompt("Ingrese su altura en metros:"));
+
+var imc = peso / (altura * altura);
+
+alert("Su índice de masa corporal (IMC) es: " + imc);*/
