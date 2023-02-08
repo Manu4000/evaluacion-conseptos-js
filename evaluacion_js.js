@@ -50,7 +50,7 @@ alert("Su índice de masa corporal (IMC) es: " + imc);*/
 
 //Si el número esta por debajo de 18.5 mostrá la leyenda "Bajo peso"Si el número esta entre 18.6 y 24.9  mostrá la leyenda "Normal" Si el número esta entre 25 y 29.9  mostrá la leyenda "Sobrepeso" Si el número esmayor a 30 mostrá la leyenda "Obesidad"
 
-var peso = parseFloat(prompt("Ingrese su peso en kg:"));
+/*var peso = parseFloat(prompt("Ingrese su peso en kg:"));
 var altura = parseFloat(prompt("Ingrese su altura en metros:"));
 var imc = peso / (altura * altura);
 
@@ -62,5 +62,18 @@ if (imc < 18.6) {
   alert("Su índice de masa corporal es " + imc + " y está en Sobrepeso");
 } else {
   alert("Su índice de masa corporal es " + imc + " y está en Obesidad");
-}
+}*/
+
+//ejercicio 5
+/*let dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+for (let i = 0; i < dias.length; i++) {
+  let dia = dias[i];
+  if (dia === "Sábado" || dia === "Domingo") {
+    console.log(dia + ": Fin de semana!");
+  } else {
+    console.log(dia);
+  }
+}*/
+
 
