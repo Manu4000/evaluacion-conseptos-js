@@ -76,4 +76,31 @@ for (let i = 0; i < dias.length; i++) {
   }
 }*/
 
+//ejercicio 6 a)
+
+let carrito = [];
+let total = 0;
+let art = "";
+
+while (art !== "0") {
+  art = prompt("Ingresá un artículo");
+  if (art === "0") break;
+  let costoUnitario = parseFloat(prompt("Ingresá el costo unitario"));
+  let cantidad = parseInt(prompt("Ingresá la cantidad de unidades"));
+  let monto = costoUnitario * cantidad;
+  carrito.push({ nombre: art, monto: monto });
+  total += monto;
+}
+
+console.log("************************************");
+console.log("FACTURA A - Número XXXXXXX-XXXXXXX-X");
+console.log("Ítems:");
+for (let i = 0; i < carrito.length; i++) {
+  console.log("- " + carrito[i].nombre);
+}
+console.log("");
+console.log("Total a facturar: $" + total.toFixed(2));
+console.log("************************************");
+
+
 
