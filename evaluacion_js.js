@@ -77,7 +77,7 @@ for (let i = 0; i < dias.length; i++) {
 }*/
 
 //ejercicio 6 a)
-
+/*
 let carrito = [];
 let total = 0;
 let art = "";
@@ -101,6 +101,103 @@ for (let i = 0; i < carrito.length; i++) {
 console.log("");
 console.log("Total a facturar: $" + total.toFixed(2));
 console.log("************************************");
+*/
 
 
+//Ejercicio 7
+/*
+let carrito = [];
+let total = 0;
+let art = "";
 
+while (art !== "0") {
+  art = prompt("Ingresá un artículo");
+  if (art === "0") break;
+  let costoUnitario = parseFloat(prompt("Ingresá el costo unitario"));
+  let cantidad = parseInt(prompt("Ingresá la cantidad de unidades"));
+  let monto = costoUnitario * cantidad;
+  carrito.push({ nombre: art, monto: monto });
+  total += monto;
+}
+
+let quiereEditar = prompt("¿Desea editar algún artículo? (SI/NO)");
+
+while (quiereEditar.toUpperCase() === "SI") {
+  console.log("************************************");
+  console.log("Ítems:");
+  for (let i = 0; i < carrito.length; i++) {
+    console.log(`${i + 1} - ${carrito[i].nombre}`);
+  }
+
+  let indiceAEditar = parseInt(prompt("Ingresá el número del ítem que deseas editar")) - 1;
+  carrito[indiceAEditar].nombre = prompt("Ingresá el nuevo nombre del ítem");
+
+  quiereEditar = prompt("¿Desea seguir editando algún artículo? (SI/NO)");
+}
+
+console.log("************************************");
+console.log("FACTURA A - Número XXXXXXX-XXXXXXX-X");
+console.log("Ítems:");
+for (let i = 0; i < carrito.length; i++) {
+  console.log("- " + carrito[i].nombre);
+}
+console.log("");
+console.log("Total a facturar: $" + total.toFixed(2));
+console.log("************************************");*/
+/*
+let items = [];
+let precioPorUnidad = [];
+let cantidadComprada = [];
+let total = 0;
+let art = "";
+
+while (art !== "0") {
+  art = prompt("Ingresá un artículo");
+  if (art === "0") break;
+  let costoUnitario = parseFloat(prompt("Ingresá el costo unitario"));
+  let cantidad = parseInt(prompt("Ingresá la cantidad de unidades"));
+  items.push(art);
+  precioPorUnidad.push(costoUnitario);
+  cantidadComprada.push(cantidad);
+  total += costoUnitario * cantidad;
+}
+
+let editar = prompt("¿Desea editar algún ítem? (SI/NO)");
+
+while (editar === "SI") {
+  console.log("************************************");
+  console.log("Ítems:");
+  for (let i = 0; i < items.length; i++) {
+    console.log(`${i + 1} - ${items[i]}`);
+  }
+
+  let itemAEditar = parseInt(
+    prompt("Seleccioná el número del ítem a editar")
+  );
+
+  items[itemAEditar - 1] = prompt("Ingresá el nombre del artículo");
+  precioPorUnidad[itemAEditar - 1] = parseFloat(
+    prompt("Ingresá el costo unitario")
+  );
+  cantidadComprada[itemAEditar - 1] = parseInt(
+    prompt("Ingresá la cantidad de unidades")
+  );
+
+  total = 0;
+  for (let i = 0; i < items.length; i++) {
+    total += precioPorUnidad[i] * cantidadComprada[i];
+  }
+
+  editar = prompt("¿Desea editar algún otro ítem? (SI/NO)");
+}
+
+console.log("************************************");
+console.log("FACTURA A - Número XXXXXXX-XXXXXXX-X");
+console.log("Ítems:");
+for (let i = 0; i < items.length; i++) {
+  console.log("- " + items[i]);
+}
+console.log("");
+console.log("Total a facturar: $" + total.toFixed(2));
+console.log("************************************");
+*/
